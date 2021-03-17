@@ -14,6 +14,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onButtonRockClicked();
+    void onButtonPaperClicked();
+    void onButtonScissorsClicked();
+
 private:
     Ui::MainWindow *ui;
 };
