@@ -19,8 +19,14 @@
      <layout class="QHBoxLayout" name="topLayout">
       <item>
        <widget class="QLabel" name="imageLeft">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/img/QuestionMark.png</pixmap>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -31,6 +37,9 @@
        <widget class="QLabel" name="imageRight">
         <property name="text">
          <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/img/QuestionMark.png</pixmap>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -152,23 +161,8 @@
        </spacer>
       </item>
       <item>
-       <layout class="QGridLayout" name="scoreLayout">
-        <item row="1" column="0">
-         <widget class="QLabel" name="aiScore">
-          <property name="font">
-           <font>
-            <pointsize>12</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Punkty komputera:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
+       <layout class="QVBoxLayout" name="scoreLayout">
+        <item>
          <widget class="QLabel" name="playerScore">
           <property name="font">
            <font>
@@ -183,6 +177,21 @@
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QLabel" name="aiScore">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Punkty komputera:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
      </layout>
@@ -190,6 +199,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>
