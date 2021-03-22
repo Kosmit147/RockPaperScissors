@@ -29,6 +29,4 @@ private:
     int result;
     int playerScore;
     int computerScore;
-
-
 };
